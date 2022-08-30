@@ -1,0 +1,17 @@
+.portada-general {
+    grid-area: portada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/lemon_cuadrado.jpg");
+    background-position: center 510px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    h1 {
+        font-family: $fuente-principal;
+        text-align: center;    
+        font-size: 50px;   
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    }
+}

@@ -1,0 +1,20 @@
+$mapa: (
+    info: blue,
+    peligro: red,
+    precaucion: rgb(192, 192, 8),
+    exito: green,
+);
+
+@each $nombres, $colores in $mapa {
+    .btn-#{$nombres} {
+        width: 100px;
+        height: 100px;
+        color: white;
+        background-color: $colores;
+        border: 1px solid $colores;
+        margin: 10px;
+        &:hover {
+            opacity: 0.5;
+        }
+    }  
+}

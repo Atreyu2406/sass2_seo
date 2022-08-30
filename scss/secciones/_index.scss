@@ -1,0 +1,38 @@
+/* *Main */
+main {
+    h1 {
+        font-family: $fuente-principal;
+        font-size: 3rem;
+    }
+}
+.carousel-item {
+    img {
+        height: 100vh;
+    }
+}
+.titulo-index {
+	animation: titulo-index 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes titulo-index {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------INDEX--------------- */
+@media (max-width: 480px) {
+    /* *Main */
+    .carousel-item {
+        img {
+            height: 90vh;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+/** -----------MENÚ CATERING--------------- */
+/* *Diseño GRID */
+.catering-grid {
+    display: grid;
+    grid-template-areas: 
+    "portada portada"
+    "img-catering1 texto-catering1"
+    "img-catering2 texto-catering2"
+    "img-catering3 texto-catering3";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 200px 400px 400px 400px;
+    margin-bottom: 40px;
+}
+
+/** Galeria de Fotos */
+.catering-grid {
+    div {
+        img {
+            @include formato-img (350px, 350px, 3px solid $color-primario);
+            padding: 10px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        .sos-un-boton {
+            a {
+                @extend %btn-pedido;
+            }
+        }
+    }
+}
+// .foto1-catering {
+//     grid-area: foto1;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 10px;
+// }
+// .texto1-catering {
+//     grid-area: texto1;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     margin: 10px;
+// }
+// .foto2-catering {
+//     grid-area: foto2;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 10px;
+// }
+// .texto2-catering {
+//     grid-area: texto2;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     margin: 10px;
+// }
+// .foto3-catering {
+//     grid-area: foto3;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 10px;
+// }
+// .texto3-catering {
+//     grid-area: texto3;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     margin: 10px;
+// }
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------CATERING--------------- */
+@media (max-width: 480px) {
+    .catering-grid {
+        display: grid;
+        grid-template-areas: 
+        "portada"
+        "img-catering1" 
+        "texto-catering1"
+        "img-catering2" 
+        "texto-catering2"
+        "img-catering3" 
+        "texto-catering3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr 400px 1fr 400px 1fr 400px;
+        margin-bottom: 40px;
+    }
+    .catering-grid {
+        div {
+            img {
+                width: 300px;
+                height: 300px;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 3px solid rgba(221,100,97,255);
+            h2 {
+                margin-bottom: 10px;
+            }
+            p {
+                text-align: center;
+            }
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+/** -----------MENÚ TORTAS--------------- */
+/* *Diseño GRID */
+.tortas-grid {
+    display: grid;
+    grid-template-areas: 
+    "portada portada portada portada"
+    "img-tortas1 texto-tortas1 img-tortas2 texto-tortas2"
+    "img-tortas3 texto-tortas3 img-tortas4 texto-tortas4";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+/** Galería de Fotos */
+.tortas-grid {
+    div {
+        img {
+            @include formato-img (300px, 300px, 3px solid $color-primario);
+            margin: 10px;
+            padding: 20px;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+        }
+        .sos-un-boton {
+            a {
+                @extend %btn-pedido;
+            }
+        }
+    }
+}
+
+// .foto1-tortas {
+//     grid-area: foto1;
+//     display: flex;
+// }
+// .texto1-tortas {
+//     grid-area: texto1;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+// .foto2-tortas {
+//     grid-area: foto2;
+//     display: flex;
+// }
+// .texto2-tortas {
+//     grid-area: texto2;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+// .foto3-tortas {
+//     grid-area: foto3;
+//     display: flex;
+// }
+// .texto3-tortas {
+//     grid-area: texto3;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+// .foto4-tortas {
+//     grid-area: foto4;
+//     display: flex;
+// }
+// .texto4-tortas {
+//     grid-area: texto4;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------HISTORIA--------------- */
+@media (max-width: 480px) {
+    .tortas-grid {
+        display: grid;
+        grid-template-areas: 
+        "portada"
+        "img-tortas1" 
+        "texto-tortas1"
+        "img-tortas2" 
+        "texto-tortas2"
+        "img-tortas3" 
+        "texto-tortas3"
+        "img-tortas4" 
+        "texto-tortas4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr 250px 1fr 250px 1fr 250px 1fr 250px;
+        margin-bottom: 40px;
+    }
+    .tortas-grid {
+            div {
+                img {   
+                width: 300px;
+                height: 300px;
+                margin-bottom: 20px;
+                border: 3px solid $color-primario;
+                padding: 10px;
+                }
+                p {
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                    padding: 0 20px;
+                    text-align: center;
+                }
+            }
+            // .img-tortas1 {
+            //     justify-content: center;
+            // }   
+            // .texto-tortas1 {
+            //     align-items: center;
+            //     justify-content: flex-start;   
+            // }
+            // .img-tortas2 {
+            //     justify-content: center;
+            // }   
+            // .texto-tortas2 {
+            //     align-items: center;
+            //     justify-content: flex-start;   
+            // }
+            // .img-tortas3 {
+            //     justify-content: center;
+            // }   
+            // .texto-tortas3 {
+            //     align-items: center;
+            //     justify-content: flex-start;   
+            // }
+            // .img-tortas4 {
+            //     justify-content: center;
+            // }   
+            // .texto-tortas4 {
+            //     align-items: center;
+            //     justify-content: flex-start;   
+            // }
+    }
+}

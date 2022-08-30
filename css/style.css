@@ -1,0 +1,722 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.catering-grid div .sos-un-boton a, .box-grid div .sos-un-boton a, .tortas-grid div .sos-un-boton a {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 550;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: rgb(221, 100, 97);
+  border-radius: 6px;
+  transition: all 0.5s ease;
+}
+.catering-grid div .sos-un-boton a:hover, .box-grid div .sos-un-boton a:hover, .tortas-grid div .sos-un-boton a:hover {
+  opacity: 0.6;
+}
+
+.btn-info {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: blue;
+  border: 1px solid blue;
+  margin: 10px;
+}
+.btn-info:hover {
+  opacity: 0.5;
+}
+
+.btn-peligro {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: red;
+  border: 1px solid red;
+  margin: 10px;
+}
+.btn-peligro:hover {
+  opacity: 0.5;
+}
+
+.btn-precaucion {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: rgb(192, 192, 8);
+  border: 1px solid rgb(192, 192, 8);
+  margin: 10px;
+}
+.btn-precaucion:hover {
+  opacity: 0.5;
+}
+
+.btn-exito {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: green;
+  border: 1px solid green;
+  margin: 10px;
+}
+.btn-exito:hover {
+  opacity: 0.5;
+}
+
+.texto-tortas1 {
+  grid-area: texto-tortas1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-tortas2 {
+  grid-area: texto-tortas2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-tortas3 {
+  grid-area: texto-tortas3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-tortas4 {
+  grid-area: texto-tortas4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-tortas1 {
+  grid-area: img-tortas1;
+  display: flex;
+}
+
+.img-tortas2 {
+  grid-area: img-tortas2;
+  display: flex;
+}
+
+.img-tortas3 {
+  grid-area: img-tortas3;
+  display: flex;
+}
+
+.img-tortas4 {
+  grid-area: img-tortas4;
+  display: flex;
+}
+
+.texto-box1 {
+  grid-area: texto-box1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.texto-box2 {
+  grid-area: texto-box2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.texto-box3 {
+  grid-area: texto-box3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.img-box1 {
+  grid-area: img-box1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.img-box2 {
+  grid-area: img-box2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.img-box3 {
+  grid-area: img-box3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.texto-catering1 {
+  grid-area: texto-catering1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.texto-catering2 {
+  grid-area: texto-catering2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.texto-catering3 {
+  grid-area: texto-catering3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.img-catering1 {
+  grid-area: img-catering1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.img-catering2 {
+  grid-area: img-catering2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.img-catering3 {
+  grid-area: img-catering3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------TORTAS--------------- */
+@media (max-width: 480px) {
+  .texto-tortas1 {
+    grid-area: texto-tortas1;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .texto-tortas2 {
+    grid-area: texto-tortas2;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .texto-tortas3 {
+    grid-area: texto-tortas3;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .texto-tortas4 {
+    grid-area: texto-tortas4;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .img-tortas1 {
+    grid-area: img-tortas1;
+    justify-content: center;
+  }
+  .img-tortas2 {
+    grid-area: img-tortas2;
+    justify-content: center;
+  }
+  .img-tortas3 {
+    grid-area: img-tortas3;
+    justify-content: center;
+  }
+  .img-tortas4 {
+    grid-area: img-tortas4;
+    justify-content: center;
+  }
+}
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------BOX--------------- */
+@media (max-width: 480px) {
+  .texto-box1 {
+    grid-area: texto-box1;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    margin: 0;
+  }
+  .texto-box2 {
+    grid-area: texto-box2;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    margin: 0;
+  }
+  .texto-box3 {
+    grid-area: texto-box3;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    margin: 0;
+  }
+  .img-box1 {
+    grid-area: img-box1;
+  }
+  .img-box2 {
+    grid-area: img-box2;
+  }
+  .img-box3 {
+    grid-area: img-box3;
+  }
+}
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------CATERING--------------- */
+@media (max-width: 480px) {
+  .texto-catering1 {
+    grid-area: texto-catering1;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    margin: 0;
+  }
+  .texto-catering2 {
+    grid-area: texto-catering2;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    margin: 0;
+  }
+  .texto-catering3 {
+    grid-area: texto-catering3;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    margin: 0;
+  }
+  .img-catering1 {
+    grid-area: img-catering1;
+  }
+  .img-catering2 {
+    grid-area: img-catering2;
+  }
+  .img-catering3 {
+    grid-area: img-catering3;
+  }
+}
+/** -----------INDEX--------------- */
+/* *Diseño Barra de Menú */
+header {
+  background-image: linear-gradient(to right, white 8%, rgb(221, 100, 97));
+}
+header ul li {
+  margin-left: 50px;
+}
+
+.navbar-nav a {
+  color: black;
+}
+.navbar-nav a:hover {
+  color: white;
+  text-shadow: black 2px 2px 2px;
+}
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------HEADER--------------- */
+@media (max-width: 480px) {
+  /* *Barra de Menú */
+  .navbar-nav a {
+    color: black;
+  }
+}
+.portada-general {
+  grid-area: portada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../imgs/lemon_cuadrado.jpg");
+  background-position: center 510px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+.portada-general h1 {
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+/** Footer */
+footer {
+  border-top: solid 10px rgb(221, 100, 97);
+  margin-top: 40px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+.footer-flex p {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.desarrollado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left, white 5%, rgb(221, 100, 97));
+  font-size: 18px;
+  height: 10vh;
+  padding: 10px;
+}
+.desarrollado p {
+  margin: 0;
+}
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------FOOTER--------------- */
+@media (max-width: 480px) {
+  /** Footer */
+  footer h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-flex p {
+    text-align: center;
+    font-size: 10px;
+    padding: 0;
+    margin: 5px;
+  }
+  .footer-flex div {
+    margin: 10px;
+  }
+  .desarrollado {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 20px;
+    background-color: rgb(221, 100, 97);
+  }
+  .desarrollado p {
+    font-size: 12px;
+  }
+}
+/* *Main */
+main h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3rem;
+}
+
+.carousel-item img {
+  height: 100vh;
+}
+
+.titulo-index {
+  animation: titulo-index 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes titulo-index {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------INDEX--------------- */
+@media (max-width: 480px) {
+  /* *Main */
+  .carousel-item img {
+    height: 90vh;
+  }
+}
+/** -----------MENÚ HISTORIA--------------- */
+/* *Diseño GRID */
+.historia-grid {
+  display: grid;
+  grid-template-areas: "portada portada" "foto texto";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 80vh;
+}
+
+/** Historia Personal */
+.img-historia {
+  grid-area: foto;
+  display: flex;
+  justify-content: center;
+}
+.img-historia img {
+  width: 90%;
+}
+
+.texto-historia {
+  grid-area: texto;
+  display: flex;
+  align-items: center;
+}
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------HISTORIA--------------- */
+@media (min-width: 481px) and (max-width: 1023px) {
+  .historia-grid {
+    display: grid;
+    grid-template-areas: "portada" "foto" "texto";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 500px auto;
+  }
+  .img-historia {
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .img-historia img {
+    width: 70vw;
+    border: solid 3px rgb(221, 100, 97);
+    padding: 5px;
+  }
+  .texto-historia {
+    grid-area: texto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .texto-historia p {
+    text-align: center;
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .historia-grid {
+    display: grid;
+    grid-template-areas: "portada" "foto" "texto";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 300px auto;
+  }
+  .img-historia {
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .img-historia img {
+    width: 90%;
+    border: solid 3px rgb(221, 100, 97);
+    padding: 5px;
+  }
+  .texto-historia {
+    grid-area: texto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .texto-historia p {
+    text-align: center;
+    padding: 20px;
+  }
+}
+/** -----------MENÚ TORTAS--------------- */
+/* *Diseño GRID */
+.tortas-grid {
+  display: grid;
+  grid-template-areas: "portada portada portada portada" "img-tortas1 texto-tortas1 img-tortas2 texto-tortas2" "img-tortas3 texto-tortas3 img-tortas4 texto-tortas4";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 1fr 1fr;
+  margin-bottom: 40px;
+}
+
+/** Galería de Fotos */
+.tortas-grid div img {
+  width: 300px;
+  height: 300px;
+  border: 3px solid rgb(221, 100, 97);
+  margin: 10px;
+  padding: 20px;
+}
+.tortas-grid div p {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------HISTORIA--------------- */
+@media (max-width: 480px) {
+  .tortas-grid {
+    display: grid;
+    grid-template-areas: "portada" "img-tortas1" "texto-tortas1" "img-tortas2" "texto-tortas2" "img-tortas3" "texto-tortas3" "img-tortas4" "texto-tortas4";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr 250px 1fr 250px 1fr 250px 1fr 250px;
+    margin-bottom: 40px;
+  }
+  .tortas-grid div img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    border: 3px solid rgb(221, 100, 97);
+    padding: 10px;
+  }
+  .tortas-grid div p {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+/** -----------MENÚ BOX--------------- */
+/* *Diseño GRID */
+.box-grid {
+  display: grid;
+  grid-template-areas: "portada portada" "img-box1 texto-box1" "img-box2 texto-box2" "img-box3 texto-box3";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 200px 400px 400px 400px;
+  margin-bottom: 40px;
+}
+
+/* *Galería de Fotos */
+.box-grid div img {
+  width: 350px;
+  height: 350px;
+  border: 3px solid rgb(221, 100, 97);
+  padding: 10px;
+}
+.box-grid div h2 {
+  margin-bottom: 10px;
+}
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------BOX--------------- */
+@media (max-width: 480px) {
+  .box-grid {
+    display: grid;
+    grid-template-areas: "portada" "img-box1" "texto-box1" "img-box2" "texto-box2" "img-box3" "texto-box3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr 400px 1fr 400px 1fr 400px;
+    margin-bottom: 40px;
+  }
+  .box-grid div img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(221, 100, 97);
+  }
+  .box-grid div img h2 {
+    margin-bottom: 10px;
+  }
+  .box-grid div img p {
+    text-align: center;
+  }
+}
+/** -----------MENÚ CATERING--------------- */
+/* *Diseño GRID */
+.catering-grid {
+  display: grid;
+  grid-template-areas: "portada portada" "img-catering1 texto-catering1" "img-catering2 texto-catering2" "img-catering3 texto-catering3";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 200px 400px 400px 400px;
+  margin-bottom: 40px;
+}
+
+/** Galeria de Fotos */
+.catering-grid div img {
+  width: 350px;
+  height: 350px;
+  border: 3px solid rgb(221, 100, 97);
+  padding: 10px;
+}
+.catering-grid div h2 {
+  margin-bottom: 10px;
+}
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------CATERING--------------- */
+@media (max-width: 480px) {
+  .catering-grid {
+    display: grid;
+    grid-template-areas: "portada" "img-catering1" "texto-catering1" "img-catering2" "texto-catering2" "img-catering3" "texto-catering3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr 400px 1fr 400px 1fr 400px;
+    margin-bottom: 40px;
+  }
+  .catering-grid div img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(221, 100, 97);
+  }
+  .catering-grid div img h2 {
+    margin-bottom: 10px;
+  }
+  .catering-grid div img p {
+    text-align: center;
+  }
+}
+/** -----------MENÚ CONTACTO--------------- */
+/* *Diseño GRID */
+.contactos-grid {
+  display: grid;
+  grid-template-areas: "portada" "form";
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px auto;
+  margin-bottom: 40px;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px;
+}
+.contacto .btn-contacto {
+  display: flex;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,113 @@
+// BUCLE TORTAS
+@for $texto-tortas from 1 through 4 {
+    .texto-tortas#{$texto-tortas} {
+        grid-area: texto-tortas#{$texto-tortas};
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@for $img-tortas from 1 through 4 {
+    .img-tortas#{$img-tortas} {
+        grid-area: img-tortas#{$img-tortas};
+        display: flex;
+    }
+}
+
+// BUCLE BOX
+@for $texto-box from 1 through 3 {
+    .texto-box#{$texto-box} {
+        grid-area: texto-box#{$texto-box};
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        margin-right: 50px;
+    }
+}
+@for $img-box from 1 through 3 {
+    .img-box#{$img-box} {
+        grid-area: img-box#{$img-box};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+}
+
+// BUCLE CATERING
+@for $texto-catering from 1 through 3 {
+    .texto-catering#{$texto-catering} {
+        grid-area: texto-catering#{$texto-catering};
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        margin-right: 50px;
+    }
+}
+@for $img-catering from 1 through 3 {
+    .img-catering#{$img-catering} {
+        grid-area: img-catering#{$img-catering};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+}
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------TORTAS--------------- */
+@media (max-width: 480px) {
+    @for $texto-tortas from 1 through 4 {
+        .texto-tortas#{$texto-tortas} {
+            grid-area: texto-tortas#{$texto-tortas};
+            align-items: center;
+            justify-content: flex-start; 
+        }
+    }
+    @for $img-tortas from 1 through 4 {
+        .img-tortas#{$img-tortas} {
+            grid-area: img-tortas#{$img-tortas};
+            justify-content: center;
+        }
+    }
+}
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------BOX--------------- */
+@media (max-width: 480px) {
+    @for $texto-box from 1 through 3 {
+        .texto-box#{$texto-box} {
+            grid-area: texto-box#{$texto-box};
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 20px;
+            margin: 0;
+        }
+    }
+    @for $img-box from 1 through 3 {
+        .img-box#{$img-box} {
+            grid-area: img-box#{$img-box};
+        }
+    }
+}
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------CATERING--------------- */
+@media (max-width: 480px) {
+    @for $texto-catering from 1 through 3 {
+        .texto-catering#{$texto-catering} {
+            grid-area: texto-catering#{$texto-catering};
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 20px;
+            margin: 0;
+        }
+    }
+    @for $img-catering from 1 through 3 {
+        .img-catering#{$img-catering} {
+            grid-area: img-catering#{$img-catering};
+        }
+    }
+}

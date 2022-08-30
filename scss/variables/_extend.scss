@@ -1,0 +1,26 @@
+%btn-pedido {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 550;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: $color-primario;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+// %formato-foto {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+// %formato-texto {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+
+

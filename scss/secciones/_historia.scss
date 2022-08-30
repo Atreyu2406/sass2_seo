@@ -1,0 +1,95 @@
+/** -----------MENÚ HISTORIA--------------- */
+/* *Diseño GRID */
+.historia-grid {
+    display: grid;
+    grid-template-areas: 
+    "portada portada"
+    "foto texto";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 80vh;
+}
+
+/** Historia Personal */
+.img-historia {
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 90%;
+    }
+}
+.texto-historia {
+    grid-area: texto;
+    display: flex;
+    align-items: center;
+}
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------HISTORIA--------------- */
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+    .historia-grid {
+        display: grid;
+        grid-template-areas: 
+        "portada"
+        "foto"
+        "texto";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 500px auto;
+        }
+        .img-historia {
+        grid-area: foto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+            img {
+                width: 70vw;
+                border: solid 3px $color-primario;
+                padding: 5px;
+            }
+        }         
+        .texto-historia {
+        grid-area: texto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+            p {
+                text-align: center;
+                padding: 20px;
+            }       
+        }
+}
+@media (max-width: 480px) {
+    .historia-grid {
+    display: grid;
+    grid-template-areas: 
+    "portada"
+    "foto"
+    "texto";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 300px auto;
+    }
+    .img-historia {
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+        img {
+            width: 90%;
+            border: solid 3px $color-primario;
+            padding: 5px;
+        }
+    }         
+    .texto-historia {
+    grid-area: texto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+        p {
+            text-align: center;
+            padding: 20px;
+        }       
+    }
+}

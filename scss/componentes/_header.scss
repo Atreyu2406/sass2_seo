@@ -1,0 +1,35 @@
+/** -----------INDEX--------------- */
+/* *Diseño Barra de Menú */
+header {
+    background-image: linear-gradient(to right, white 8%, $color-primario); 
+    ul {
+        li {
+            margin-left: 50px;
+        }
+    }
+}
+.navbar-nav {
+    a {
+    color: black;
+    &:hover {
+        color: white;
+        text-shadow: black 2px 2px 2px;
+    }
+    }
+}
+
+/** -----------RESPONSIVE SMARTPHONE--------------- */
+/** -----------HEADER--------------- */
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+
+}
+@media (max-width: 480px) {
+    /* *Barra de Menú */
+    .navbar-nav a{
+        color: black;
+    }
+}
+

@@ -1,0 +1,5 @@
+@mixin formato-img ($ancho, $alto, $borde) {
+    width: $ancho;
+    height: $alto;
+    border: $borde;
+}
